@@ -4,9 +4,102 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/files/logo.png">
   <title>Chiara By Kiara</title>
 </head>
+
+<style>
+  @font-face {
+    font-family: 'QuicheSans Regular';
+    font-size: normal;
+    font-weight: normal;
+    src: local('QuicheSans'), url('/files/QuicheSans.woff2') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  width: 100vw;
+  background-color: #f9ece4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.title {
+  font-family: 'QuicheSans Regular'; 
+  font-size: 50px;
+  color: black;
+  margin-top: 20px;
+}
+
+.divider {
+  width: 200px;
+  height: 2px;
+  background-color: black;
+  margin: 30px 0px 50px 0;
+}
+
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 50vw;
+}
+
+.shop {
+  margin: 20px 50px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+  .title {
+  font-size: 35px;
+  color: black;
+}
+
+  .description {
+    width: 70vw;
+    font-size: 13px;
+  }
+
+  .shop {
+    margin: 20px 20px;
+  }
+
+  svg {
+    transform: scale(1.5);
+  }
+}
+
+</style>
+
 <body>
+
+  <div class="header">
+    <div class="ec-cart-widget"></div>
+    <div>
+      <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?78069859&data_platform=code&data_date=2022-08-14" charset="utf-8"></script>
+      <script type="text/javascript">Ecwid.init();</script>
+    </div>
+    <h1 class="title">Shop With Us </h1>
+    <div class="divider"></div>
+    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  
+  </div>
+
+  <div class="shop">
+    <div id="my-store-78069859"></div>
+    <div>
+      <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?78069859&data_platform=code&data_date=2022-08-14" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-78069859");</script>
+    </div>
+  </div>
   
 </body>
 </html>
